@@ -1,0 +1,6 @@
+plugins { id 'com.android.application' }
+android { namespace 'com.yuu.translate'; compileSdk 35
+ defaultConfig { applicationId 'com.yuu.translate'; minSdk 30; targetSdk 34; versionCode 1; versionName '0.1' }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies { implementation 'com.google.mlkit:translate:17.0.3'; implementation 'com.google.mlkit:text-recognition-chinese:16.0.1' }
